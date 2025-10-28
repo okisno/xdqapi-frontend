@@ -231,7 +231,8 @@ const TableList: React.FC = () => {
           修改
         </a>,
         record.status === 0 ? <a
-          key="config"
+          //TODO: key="config"
+          key="online"
           onClick={() => {
             handleOnline(record);
           }}
@@ -240,7 +241,8 @@ const TableList: React.FC = () => {
         </a> : null,
         record.status === 1 ? <Button
           type="text"
-          key="config"
+          //TODO:key="config"
+          key="offline"
           danger
           onClick={() => {
             handleOffline(record);
@@ -250,7 +252,8 @@ const TableList: React.FC = () => {
         </Button> : null,
         <Button
           type="text"
-          key="config"
+          //TODO:key="config"
+          key="delete"
           danger
           onClick={() => {
             handleRemove(record);
